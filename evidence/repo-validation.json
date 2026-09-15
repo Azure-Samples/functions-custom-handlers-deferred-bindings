@@ -1,0 +1,881 @@
+{
+  "recordedAt": "2026-09-15T17:11:55.193Z",
+  "environment": {
+    "platform": "win32",
+    "coreTools": "4.12.0",
+    "hostRuntime": "4.1048.200.26180",
+    "bundle": "4.34.0",
+    "storageBlobs": "5.3.7.0",
+    "storageQueues": "5.3.7.0",
+    "azurite": "3.35.0",
+    "go": "go version go1.26.0 windows/amd64",
+    "node": "v22.20.0",
+    "python": "Python 3.13.15"
+  },
+  "scope": "HTTP invocation body bytes; application bytes consumed; hashes. Not RSS, network capture or throughput.",
+  "provenance": {
+    "run.mjs": "01d81ee66ffb8399325b09448906bbb9f15dee9b63632c9ccddc4f2e81e4c61b",
+    "publish-evidence.mjs": "bebf064c6ef31baaa2b3eb797202b21a65cc806586f13857cb6e6fb8863b5ab7",
+    "evidence-summary.mjs": "7790f13d98b182751c6e23d8a98017a7e10690420e9cebd8bd25f6eec666877f",
+    "package-lock.json": "86aae39b5f89537b648ef871a771cc6c77914d18720e2005a921f457140e64c3",
+    "go/main.go": "3051c86904800048e5469e96d1e132aba46a57d7462eafd13149e5a6efa457d0",
+    "go/storage.go": "daeac38d33afab07021ecef0f62a6b39449f8e746bd8527f272a2f22c82dda9b",
+    "go/go.mod": "a5f0420c666d4d0724c4ed6345dc24812b2dbe9d10e452ec92bf3767afa4500d",
+    "go/go.sum": "8d8c1e18331f108c4e7109a495ef2b46a277afdf0cae2c808eb69510d62152e3",
+    "javascript/handler.mjs": "2ed73e38c54ffcc7bfde37160d3d42e553b54aca35ca7124d45e1d90e2850c11",
+    "python/handler.py": "417f31e5aeb1356137da56290920b66605227e0946a2fd259db5a09414b6adb6",
+    "python/requirements.txt": "f7600ac96d119f97f2f45628726f8f826a3d71284aab6f12ff78ca9c5dcc44cf",
+    "bin/handler.exe": "39c97e7f560debb9792e40788a06cbc83e179f5720a341e8775eb525e663c779"
+  },
+  "pythonPackages": [
+    "azure-core==1.41.0",
+    "azure-storage-blob==12.30.1",
+    "certifi==2026.7.22",
+    "cffi==2.1.1",
+    "charset-normalizer==3.5.1",
+    "cryptography==50.0.1",
+    "idna==3.19",
+    "isodate==0.7.2",
+    "pip==26.2.1",
+    "pycparser==3.0",
+    "requests==2.34.2",
+    "typing-extensions==4.16.0",
+    "urllib3==2.7.0"
+  ],
+  "handlerSDKs": {
+    "goAzblob": "1.8.0",
+    "javascriptStorageBlob": "12.31.0",
+    "javascriptStorageQueue": "12.29.0",
+    "pythonStorageBlob": "12.30.1"
+  },
+  "results": [
+    {
+      "blobBytes": 37,
+      "language": "go",
+      "function": "BlobBody",
+      "caseId": "size-37.txt",
+      "invocationBytes": 1501,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": true,
+      "bytesRead": 37,
+      "sha256": "9a27f569e1e3c1dbc52e734a518d4f05cd6d21e9e34d7560bf33451104d1c11f",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "go",
+      "function": "BlobDeferred",
+      "caseId": "size-37.txt",
+      "invocationBytes": 1601,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 5,
+      "sha256": "3733cd977ff8eb18b987357e22ced99f46097f31ecb239e878ae63760e83e4d5",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "go",
+      "function": "BlobMetadata",
+      "caseId": "size-37.txt",
+      "invocationBytes": 1601,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "go",
+      "function": "ReadBody",
+      "caseId": "",
+      "invocationBytes": 1028,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 37,
+      "sha256": "9a27f569e1e3c1dbc52e734a518d4f05cd6d21e9e34d7560bf33451104d1c11f",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "go",
+      "function": "ReadDeferred",
+      "caseId": "",
+      "invocationBytes": 1132,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "go",
+      "function": "BlobBody",
+      "caseId": "size-1048576.txt",
+      "invocationBytes": 1399568,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": true,
+      "bytesRead": 1048576,
+      "sha256": "5750fe039421ad5f8c72e08ddff480d9bf28aee01d8989dfb874f96baa830dcf",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "go",
+      "function": "BlobDeferred",
+      "caseId": "size-1048576.txt",
+      "invocationBytes": 1616,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 5,
+      "sha256": "3733cd977ff8eb18b987357e22ced99f46097f31ecb239e878ae63760e83e4d5",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "go",
+      "function": "BlobMetadata",
+      "caseId": "size-1048576.txt",
+      "invocationBytes": 1616,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "go",
+      "function": "ReadBody",
+      "caseId": "",
+      "invocationBytes": 1399095,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 1048576,
+      "sha256": "5750fe039421ad5f8c72e08ddff480d9bf28aee01d8989dfb874f96baa830dcf",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "go",
+      "function": "ReadDeferred",
+      "caseId": "",
+      "invocationBytes": 1147,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "go",
+      "function": "BlobBody",
+      "caseId": "size-8388608.txt",
+      "invocationBytes": 11186276,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": true,
+      "bytesRead": 8388608,
+      "sha256": "b264d66988bb95bb03b396e19fca39d245c52b224677b1747bb96cd21c0fc505",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "go",
+      "function": "BlobDeferred",
+      "caseId": "size-8388608.txt",
+      "invocationBytes": 1616,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 5,
+      "sha256": "3733cd977ff8eb18b987357e22ced99f46097f31ecb239e878ae63760e83e4d5",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "go",
+      "function": "BlobMetadata",
+      "caseId": "size-8388608.txt",
+      "invocationBytes": 1616,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "go",
+      "function": "ReadBody",
+      "caseId": "",
+      "invocationBytes": 11185803,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 8388608,
+      "sha256": "b264d66988bb95bb03b396e19fca39d245c52b224677b1747bb96cd21c0fc505",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "go",
+      "function": "ReadDeferred",
+      "caseId": "",
+      "invocationBytes": 1147,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "language": "go",
+      "function": "QueueBody",
+      "caseId": "",
+      "invocationBytes": 421,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 11,
+      "sha256": "a863c4ff5ee9228f2ef06d72b536269346c5e237993c1dde5946d185748dd7a8",
+      "error": ""
+    },
+    {
+      "language": "go",
+      "function": "QueueDeferred",
+      "caseId": "",
+      "invocationBytes": 559,
+      "bindingKind": "object",
+      "source": "AzureStorageQueues",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "javascript",
+      "function": "BlobBody",
+      "caseId": "size-37.txt",
+      "invocationBytes": 1509,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": true,
+      "bytesRead": 37,
+      "sha256": "9a27f569e1e3c1dbc52e734a518d4f05cd6d21e9e34d7560bf33451104d1c11f",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "javascript",
+      "function": "BlobDeferred",
+      "caseId": "size-37.txt",
+      "invocationBytes": 1609,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 5,
+      "sha256": "3733cd977ff8eb18b987357e22ced99f46097f31ecb239e878ae63760e83e4d5",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "javascript",
+      "function": "BlobMetadata",
+      "caseId": "size-37.txt",
+      "invocationBytes": 1609,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "javascript",
+      "function": "ReadBody",
+      "caseId": "",
+      "invocationBytes": 1028,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 37,
+      "sha256": "9a27f569e1e3c1dbc52e734a518d4f05cd6d21e9e34d7560bf33451104d1c11f",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "javascript",
+      "function": "ReadDeferred",
+      "caseId": "",
+      "invocationBytes": 1132,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "javascript",
+      "function": "BlobBody",
+      "caseId": "size-1048576.txt",
+      "invocationBytes": 1399576,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": true,
+      "bytesRead": 1048576,
+      "sha256": "5750fe039421ad5f8c72e08ddff480d9bf28aee01d8989dfb874f96baa830dcf",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "javascript",
+      "function": "BlobDeferred",
+      "caseId": "size-1048576.txt",
+      "invocationBytes": 1625,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 5,
+      "sha256": "3733cd977ff8eb18b987357e22ced99f46097f31ecb239e878ae63760e83e4d5",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "javascript",
+      "function": "BlobMetadata",
+      "caseId": "size-1048576.txt",
+      "invocationBytes": 1625,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "javascript",
+      "function": "ReadBody",
+      "caseId": "",
+      "invocationBytes": 1399095,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 1048576,
+      "sha256": "5750fe039421ad5f8c72e08ddff480d9bf28aee01d8989dfb874f96baa830dcf",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "javascript",
+      "function": "ReadDeferred",
+      "caseId": "",
+      "invocationBytes": 1148,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "javascript",
+      "function": "BlobBody",
+      "caseId": "size-8388608.txt",
+      "invocationBytes": 11186284,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": true,
+      "bytesRead": 8388608,
+      "sha256": "b264d66988bb95bb03b396e19fca39d245c52b224677b1747bb96cd21c0fc505",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "javascript",
+      "function": "BlobDeferred",
+      "caseId": "size-8388608.txt",
+      "invocationBytes": 1625,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 5,
+      "sha256": "3733cd977ff8eb18b987357e22ced99f46097f31ecb239e878ae63760e83e4d5",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "javascript",
+      "function": "BlobMetadata",
+      "caseId": "size-8388608.txt",
+      "invocationBytes": 1625,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "javascript",
+      "function": "ReadBody",
+      "caseId": "",
+      "invocationBytes": 11185803,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 8388608,
+      "sha256": "b264d66988bb95bb03b396e19fca39d245c52b224677b1747bb96cd21c0fc505",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "javascript",
+      "function": "ReadDeferred",
+      "caseId": "",
+      "invocationBytes": 1145,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "language": "javascript",
+      "function": "QueueBody",
+      "caseId": "",
+      "invocationBytes": 421,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 11,
+      "sha256": "a863c4ff5ee9228f2ef06d72b536269346c5e237993c1dde5946d185748dd7a8",
+      "error": ""
+    },
+    {
+      "language": "javascript",
+      "function": "QueueDeferred",
+      "caseId": "",
+      "invocationBytes": 560,
+      "bindingKind": "object",
+      "source": "AzureStorageQueues",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "python",
+      "function": "BlobBody",
+      "caseId": "size-37.txt",
+      "invocationBytes": 1505,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": true,
+      "bytesRead": 37,
+      "sha256": "9a27f569e1e3c1dbc52e734a518d4f05cd6d21e9e34d7560bf33451104d1c11f",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "python",
+      "function": "BlobDeferred",
+      "caseId": "size-37.txt",
+      "invocationBytes": 1605,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 5,
+      "sha256": "3733cd977ff8eb18b987357e22ced99f46097f31ecb239e878ae63760e83e4d5",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "python",
+      "function": "BlobMetadata",
+      "caseId": "size-37.txt",
+      "invocationBytes": 1605,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "python",
+      "function": "ReadBody",
+      "caseId": "",
+      "invocationBytes": 1027,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 37,
+      "sha256": "9a27f569e1e3c1dbc52e734a518d4f05cd6d21e9e34d7560bf33451104d1c11f",
+      "error": ""
+    },
+    {
+      "blobBytes": 37,
+      "language": "python",
+      "function": "ReadDeferred",
+      "caseId": "",
+      "invocationBytes": 1132,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "python",
+      "function": "BlobBody",
+      "caseId": "size-1048576.txt",
+      "invocationBytes": 1399572,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": true,
+      "bytesRead": 1048576,
+      "sha256": "5750fe039421ad5f8c72e08ddff480d9bf28aee01d8989dfb874f96baa830dcf",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "python",
+      "function": "BlobDeferred",
+      "caseId": "size-1048576.txt",
+      "invocationBytes": 1620,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 5,
+      "sha256": "3733cd977ff8eb18b987357e22ced99f46097f31ecb239e878ae63760e83e4d5",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "python",
+      "function": "BlobMetadata",
+      "caseId": "size-1048576.txt",
+      "invocationBytes": 1620,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "python",
+      "function": "ReadBody",
+      "caseId": "",
+      "invocationBytes": 1399095,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 1048576,
+      "sha256": "5750fe039421ad5f8c72e08ddff480d9bf28aee01d8989dfb874f96baa830dcf",
+      "error": ""
+    },
+    {
+      "blobBytes": 1048576,
+      "language": "python",
+      "function": "ReadDeferred",
+      "caseId": "",
+      "invocationBytes": 1147,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "python",
+      "function": "BlobBody",
+      "caseId": "size-8388608.txt",
+      "invocationBytes": 11186280,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": true,
+      "bytesRead": 8388608,
+      "sha256": "b264d66988bb95bb03b396e19fca39d245c52b224677b1747bb96cd21c0fc505",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "python",
+      "function": "BlobDeferred",
+      "caseId": "size-8388608.txt",
+      "invocationBytes": 1620,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 5,
+      "sha256": "3733cd977ff8eb18b987357e22ced99f46097f31ecb239e878ae63760e83e4d5",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "python",
+      "function": "BlobMetadata",
+      "caseId": "size-8388608.txt",
+      "invocationBytes": 1620,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": true,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "python",
+      "function": "ReadBody",
+      "caseId": "",
+      "invocationBytes": 11185803,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 8388608,
+      "sha256": "b264d66988bb95bb03b396e19fca39d245c52b224677b1747bb96cd21c0fc505",
+      "error": ""
+    },
+    {
+      "blobBytes": 8388608,
+      "language": "python",
+      "function": "ReadDeferred",
+      "caseId": "",
+      "invocationBytes": 1147,
+      "bindingKind": "object",
+      "source": "AzureStorageBlobs",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    },
+    {
+      "language": "python",
+      "function": "QueueBody",
+      "caseId": "",
+      "invocationBytes": 421,
+      "bindingKind": "string",
+      "source": "",
+      "contentKeys": [],
+      "uriPresent": false,
+      "bytesRead": 11,
+      "sha256": "a863c4ff5ee9228f2ef06d72b536269346c5e237993c1dde5946d185748dd7a8",
+      "error": ""
+    },
+    {
+      "language": "python",
+      "function": "QueueDeferred",
+      "caseId": "",
+      "invocationBytes": 560,
+      "bindingKind": "object",
+      "source": "AzureStorageQueues",
+      "contentKeys": [
+        "IsEmpty",
+        "Length",
+        "MediaType"
+      ],
+      "uriPresent": false,
+      "bytesRead": 0,
+      "sha256": "",
+      "error": ""
+    }
+  ]
+}

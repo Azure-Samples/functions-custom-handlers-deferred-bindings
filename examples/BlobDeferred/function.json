@@ -1,0 +1,15 @@
+{
+  "bindings": [
+    {
+      "name": "blob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "incoming/{name}",
+      "connection": "AzureWebJobsStorage",
+      "dataType": "binary",
+      "properties": {
+        "supportsDeferredBinding": true
+      }
+    }
+  ]
+}

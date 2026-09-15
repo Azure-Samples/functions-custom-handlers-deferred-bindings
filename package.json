@@ -1,0 +1,13 @@
+{
+  "name": "functions-custom-handlers-deferred-bindings",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test evidence-summary.test.mjs",
+    "experiment": "node run.mjs"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "12.31.0",
+    "@azure/storage-queue": "12.29.0"
+  }
+}
