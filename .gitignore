@@ -427,3 +427,14 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Custom handler sample dependencies, output and local credentials
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+go.work
+go.work.sum
+local.settings.json
+.env
+coverage/
